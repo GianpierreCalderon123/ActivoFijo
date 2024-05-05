@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VacunaProject0", "PraxisProject0\VacunaProject0.csproj", "{7B99B344-541D-4C4D-AA31-79EF8CD6BE87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatalogoBL", "CatalogoBL\CatalogoBL.csproj", "{84BC3F53-328C-411F-8C94-9FD7C27A2738}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatalogoDA", "CatalogoDA\CatalogoDA.csproj", "{4D10FD39-F9A6-42F8-AB94-588F821D4809}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7B99B344-541D-4C4D-AA31-79EF8CD6BE87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B99B344-541D-4C4D-AA31-79EF8CD6BE87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B99B344-541D-4C4D-AA31-79EF8CD6BE87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B99B344-541D-4C4D-AA31-79EF8CD6BE87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84BC3F53-328C-411F-8C94-9FD7C27A2738}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84BC3F53-328C-411F-8C94-9FD7C27A2738}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84BC3F53-328C-411F-8C94-9FD7C27A2738}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84BC3F53-328C-411F-8C94-9FD7C27A2738}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D10FD39-F9A6-42F8-AB94-588F821D4809}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D10FD39-F9A6-42F8-AB94-588F821D4809}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D10FD39-F9A6-42F8-AB94-588F821D4809}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D10FD39-F9A6-42F8-AB94-588F821D4809}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

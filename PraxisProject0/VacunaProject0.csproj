@@ -1,0 +1,440 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7B99B344-541D-4C4D-AA31-79EF8CD6BE87}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PraxisProject0</RootNamespace>
+    <AssemblyName>PraxisProject0</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <FilesToIncludeForPublish>AllFilesInTheProject</FilesToIncludeForPublish>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\..\ConsultaProveedor2\ConsultaProveedor\bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.6.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.6.1\lib\BouncyCastle.Crypto.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ClosedXML">
+      <HintPath>..\..\ConsultaProveedor2\ConsultaProveedor\bin\ClosedXML.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml">
+      <HintPath>..\..\ConsultaProveedor2\ConsultaProveedor\bin\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelNumberFormat">
+      <HintPath>..\..\ConsultaProveedor2\ConsultaProveedor\bin\ExcelNumberFormat.dll</HintPath>
+    </Reference>
+    <Reference Include="FastMember">
+      <HintPath>..\..\ConsultaProveedor2\ConsultaProveedor\bin\FastMember.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.2, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.2\lib\itextsharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ConsultaProveedor2\ConsultaProveedor\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ConsultaProveedor2\ConsultaProveedor\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder2, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ConsultaProveedor2\ConsultaProveedor\bin\Microsoft.Practices.ObjectBuilder2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ConsultaProveedor2\ConsultaProveedor\bin\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ConsultaProveedor2\ConsultaProveedor\bin\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ConsultaProveedor2\ConsultaProveedor\bin\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ConsultaProveedor2\ConsultaProveedor\bin\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ConsultaProveedor2\ConsultaProveedor\bin\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ConsultaProveedor2\ConsultaProveedor\bin\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ConsultaProveedor2\ConsultaProveedor\bin\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ConsultaProveedor2\ConsultaProveedor\bin\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1.1-removebg-preview.png" />
+    <Content Include="1.2-removebg-preview.png" />
+    <Content Include="1.3-removebg-preview.png" />
+    <Content Include="AccesoUsuarios.aspx" />
+    <Content Include="activo-removebg-preview.png" />
+    <Content Include="activo.png" />
+    <Content Include="Alerta.aspx" />
+    <Content Include="ArrowCross.svg.png" />
+    <Content Include="asignacion.png" />
+    <Content Include="atras-removebg-preview.png" />
+    <Content Include="atras.png" />
+    <Content Include="barra1.JPG" />
+    <Content Include="CambioMasivoDeCartera.aspx" />
+    <Content Include="CargaMasivaActivos.aspx" />
+    <Content Include="CatalogoActivos.aspx" />
+    <Content Include="cliente-removebg-preview.png" />
+    <Content Include="cliente.png" />
+    <Content Include="default.aspx" />
+    <Content Include="DemoImpresionOrdenCompra.aspx" />
+    <Content Include="fondo.jpg" />
+    <Content Include="Global.asax" />
+    <Content Include="GuiaMovimiento.aspx" />
+    <Content Include="imagen activo.jpg" />
+    <Content Include="InsertarMovimiento.aspx" />
+    <Content Include="JsBarcode.all.js" />
+    <Content Include="JsBarcode.all.min.js" />
+    <Content Include="JsBarcode.js" />
+    <Content Include="logo.jpg" />
+    <Content Include="mantenimiento-removebg-preview.png" />
+    <Content Include="Mantenimiento.aspx" />
+    <Content Include="mantenimiento.png" />
+    <Content Include="Menu.aspx" />
+    <Content Include="ModificacionActivo.aspx" />
+    <Content Include="movimiento-removebg-preview.png" />
+    <Content Include="movimiento.JPG" />
+    <Content Include="Movimientos.aspx" />
+    <Content Include="NuevoUsuario.aspx" />
+    <Content Include="p0.aspx" />
+    <Content Include="Paginas.asmx" />
+    <Content Include="prueba.aspx" />
+    <Content Include="reporte-removebg-preview.png" />
+    <Content Include="Reporte.aspx" />
+    <Content Include="reporte.png" />
+    <Content Include="ReporteAsignacion.aspx" />
+    <Content Include="ReporteDepreciacion.aspx" />
+    <Content Include="Reportes.aspx" />
+    <Content Include="salir-removebg-preview %281%29.png" />
+    <Content Include="salir-removebg-preview.png" />
+    <Content Include="salir.png" />
+    <Content Include="usuario-removebg-preview.png" />
+    <Content Include="usuario.png" />
+    <Content Include="Usuarios.aspx" />
+    <Content Include="VerActivos.aspx" />
+    <Content Include="VerMantenimiento.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="_asig-removebg-preview.png" />
+    <Content Include="_asig.jpeg" />
+    <Content Include="_usu-removebg-preview.png" />
+    <Content Include="_usu.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccesoUsuarios.aspx.cs">
+      <DependentUpon>AccesoUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AccesoUsuarios.aspx.designer.cs">
+      <DependentUpon>AccesoUsuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Alerta.aspx.cs">
+      <DependentUpon>Alerta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Alerta.aspx.designer.cs">
+      <DependentUpon>Alerta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CambioMasivoDeCartera.aspx.cs">
+      <DependentUpon>CambioMasivoDeCartera.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CambioMasivoDeCartera.aspx.designer.cs">
+      <DependentUpon>CambioMasivoDeCartera.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CargaMasivaActivos.aspx.cs">
+      <DependentUpon>CargaMasivaActivos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CargaMasivaActivos.aspx.designer.cs">
+      <DependentUpon>CargaMasivaActivos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CatalogoActivos.aspx.cs">
+      <DependentUpon>CatalogoActivos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CatalogoActivos.aspx.designer.cs">
+      <DependentUpon>CatalogoActivos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente.cs" />
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DemoImpresionOrdenCompra.aspx.cs">
+      <DependentUpon>DemoImpresionOrdenCompra.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DemoImpresionOrdenCompra.aspx.designer.cs">
+      <DependentUpon>DemoImpresionOrdenCompra.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="GuiaMovimiento.aspx.cs">
+      <DependentUpon>GuiaMovimiento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GuiaMovimiento.aspx.designer.cs">
+      <DependentUpon>GuiaMovimiento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InsertarMovimiento.aspx.cs">
+      <DependentUpon>InsertarMovimiento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InsertarMovimiento.aspx.designer.cs">
+      <DependentUpon>InsertarMovimiento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento.aspx.cs">
+      <DependentUpon>Mantenimiento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento.aspx.designer.cs">
+      <DependentUpon>Mantenimiento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.aspx.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Menu.aspx.designer.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModificacionActivo.aspx.cs">
+      <DependentUpon>ModificacionActivo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModificacionActivo.aspx.designer.cs">
+      <DependentUpon>ModificacionActivo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Movimientos.aspx.cs">
+      <DependentUpon>Movimientos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Movimientos.aspx.designer.cs">
+      <DependentUpon>Movimientos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NuevoUsuario.aspx.cs">
+      <DependentUpon>NuevoUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NuevoUsuario.aspx.designer.cs">
+      <DependentUpon>NuevoUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="p0.aspx.cs">
+      <DependentUpon>p0.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="p0.aspx.designer.cs">
+      <DependentUpon>p0.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas.asmx.cs">
+      <DependentUpon>Paginas.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PraxyEcologyDataDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PraxyEcologyDataDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="prueba.aspx.cs">
+      <DependentUpon>prueba.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="prueba.aspx.designer.cs">
+      <DependentUpon>prueba.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte.aspx.cs">
+      <DependentUpon>Reporte.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporte.aspx.designer.cs">
+      <DependentUpon>Reporte.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteAsignacion.aspx.cs">
+      <DependentUpon>ReporteAsignacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReporteAsignacion.aspx.designer.cs">
+      <DependentUpon>ReporteAsignacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteDepreciacion.aspx.cs">
+      <DependentUpon>ReporteDepreciacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReporteDepreciacion.aspx.designer.cs">
+      <DependentUpon>ReporteDepreciacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes.aspx.cs">
+      <DependentUpon>Reportes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes.aspx.designer.cs">
+      <DependentUpon>Reportes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios.aspx.cs">
+      <DependentUpon>Usuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usuarios.aspx.designer.cs">
+      <DependentUpon>Usuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VerActivos.aspx.cs">
+      <DependentUpon>VerActivos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VerActivos.aspx.designer.cs">
+      <DependentUpon>VerActivos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VerMantenimiento.aspx.cs">
+      <DependentUpon>VerMantenimiento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VerMantenimiento.aspx.designer.cs">
+      <DependentUpon>VerMantenimiento.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PraxyEcologyDataDataSet.xsc">
+      <DependentUpon>PraxyEcologyDataDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="packages.config" />
+    <None Include="PraxyEcologyDataDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PraxyEcologyDataDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="PraxyEcologyDataDataSet.xss">
+      <DependentUpon>PraxyEcologyDataDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Properties\PublishProfiles\DemoActivoFijoPle.pubxml" />
+    <None Include="Properties\PublishProfiles\Praxis.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CatalogoBL\CatalogoBL.csproj">
+      <Project>{84bc3f53-328c-411f-8c94-9fd7c27a2738}</Project>
+      <Name>CatalogoBL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Report_Asignacion.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ReportCatalogo.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ReporteGuiaMovimiento.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="VerReporteDepreciacion.rdlc" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>62353</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:62777/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
